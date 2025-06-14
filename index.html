@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" type="image/png" href="icon.png">
+  <title>Home - Asteria Chronicle</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <img src="logo-asteria.png" alt="Loading..." class="preloader-logo">
+  </div>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="navbar-container">
+      <!-- Kiri: Logo Asteria -->
+      <div class="logo">
+        <a href="index.html">
+          <img src="logo-asteria.png" alt="Logo Asteria" />
+        </a>
+      </div>
+
+      <!-- Tengah: Menu -->
+      <nav class="nav-links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="tentang.html">Tentang Medieval</a>
+        <a href="rules.html">Rules</a>
+        <div class="dropdown">
+          <a href="#" class="dropbtn">Registrasi</a>
+          <div class="dropdown-content">
+            <a href="partyquest.html" target="_blank">Party Quest</a>
+            <a href="volunteer.html" target="_blank">Volunteer</a>
+            <a href="talentperformer.html" target="_blank">Talent Performer</a>
+            <a href="boffer.html" target="_blank">Boffer Tournament</a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Kanan: Logo Yuuhi -->
+      <div class="logo-right">
+        <img src="logo-yuuhi.png" alt="Logo Yuuhi" />
+      </div>
+
+      <!-- Hamburger -->
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="video-section">
+    <video autoplay muted loop id="video-bg">
+      <source src="video.mp4" type="video/mp4">
+      Browser Anda tidak mendukung video.
+    </video>
+    <div class="video-overlay"></div>
+    <div class="video-text">
+      <h1>Asteria Chronicle</h1>
+      <p>Petualanganmu Dimulai di Sini</p>
+      <a href="https://s.id/AsteriaChronicleTicket" class="hero-button" target="_blank" rel="noopener noreferrer">Beli Tiket</a>
+    </div>
+  </section>
+
+  <!-- Countdown Box -->
+  <section class="countdown">
+    <h2>Hitung Mundur Menuju Asteria Chronicle - 28 Juni 2025</h2>
+    <div id="timer-boxes" class="countdown-boxes">
+      <div class="box"><span id="days">0</span><br>Hari</div>
+      <div class="box"><span id="hours">0</span><br>Jam</div>
+      <div class="box"><span id="minutes">0</span><br>Menit</div>
+      <div class="box"><span id="seconds">0</span><br>Detik</div>
+    </div>
+  </section>
+
+  <!-- Community Partner -->
+  <section class="community-partner">
+    <h3>Community Partner</h3>
+    <div class="partner-logos">
+      <img src="img/logo/rollindo.png" alt="Roll.Indo" />
+      <img src="img/logo/yoru.png" alt="Yoru" />
+      <img src="img/logo/braveflorist.png" alt="Brave Florist" />
+      <img src="img/logo/rakuon.png" alt="Rakuon" />
+    </div>
+  </section>
+
+  <!-- Talent Performance -->
+  <section class="talent-performance">
+    <h3>Talent Performance</h3>
+    <div class="partner-logos">
+      <img src="img/logo/haruna.PNG" alt="Haruna" />
+      <img src="img/logo/straybeats.png" alt="Straybeats" />
+    </div>
+  </section>
+
+  <!-- Media Partner -->
+  <section class="media-partner">
+    <h3>Media Partner</h3>
+    <div class="partner-logos">
+      <img src="img/logo/inbyte.png" alt="Inbyte" />
+      <img src="img/logo/lumimedia.png" alt="Lumimedia" />
+      <img src="img/logo/zenithar.png" alt="Zenithar" />
+      <img src="img/logo/cosplaykalimantan.PNG" alt="Cosplay Kalimantan" />
+      <img src="img/logo/berhembus.png" alt="Berhembus" />
+    </div>
+  </section>
+
+  <!-- Sponsor -->
+  <section class="sponsor-partner" id="sponsor">
+    <h3>Sponsor By</h3>
+    <div class="partner-logos">
+      <img src="img/logo/beecoffee.png" alt="Bee Coffee" />
+      <img src="img/logo/rinagallery.png" alt="Rina Gallery" />
+      <img src="img/logo/rhechan.jpg" alt="Rhechan Rental" />
+      <img src="img/logo/nyanrose.jpeg" alt="NyanCosplay Rental" />
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-asteria">
+    <div class="footer-container">
+      <div class="footer-left">
+        <img src="logo-asteria.png" alt="Logo Asteria" class="footer-logo">
+      </div>
+      <div class="footer-center">
+        <h4>Contact</h4>
+        <div class="footer-contact">
+          <img src="img/icon/wa.png" alt="WA Icon">
+          <span>0831 5372 0948</span>
+        </div>
+        <div class="footer-contact">
+          <img src="img/icon/email.png" alt="Email Icon">
+          <span>yhikari038@gmail.com</span>
+        </div>
+        <div class="footer-socials">
+          <a href="https://instagram.com/yuuhi.no.hikari" target="_blank">
+            <img src="img/icon/ig.png" alt="Instagram Logo" class="ig-logo">
+          </a>
+          <p class="ig-handle">@yuuhi.no.hikari</p>
+        </div>
+      </div>
+      <div class="footer-right">
+        <h4>Registrasi</h4>
+        <ul>
+          <li><a href="partyquest.html" target="_blank">Party Quest</a></li>
+          <li><a href="volunteer.html" target="_blank">Volunteer</a></li>
+          <li><a href="talentperformer.html" target="_blank">Talent Performer</a></li>
+          <li><a href="boffer.html" target="_blank">Boffer Tournament</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <p class="copyright">2025 © Yuuhi no Hikari. All Rights Reserved</p>
+  </footer>
+
+<!-- Countdown Script -->
+  <script>
+    const countdown = () => {
+      const target = new Date("June 28, 2025 10:00:00").getTime();
+      const now = new Date().getTime();
+      const distance = target - now;
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.getElementById("days").textContent = days;
+      document.getElementById("hours").textContent = hours;
+      document.getElementById("minutes").textContent = minutes;
+      document.getElementById("seconds").textContent = seconds;
+    };
+    setInterval(countdown, 1000);
+  </script>
+
+  <!-- Preloader -->
+  <script>
+    window.addEventListener("load", function () {
+      const preloader = document.getElementById("preloader");
+      preloader.style.opacity = "0";
+      preloader.style.transition = "opacity 0.5s ease";
+      setTimeout(() => {
+        preloader.style.display = "none";
+      }, 500);
+    });
+  </script>
+
+  <!-- Navbar Toggle & Dropdown Registrasi -->
+  <script>
+    function toggleMenu() {
+      document.querySelector('.nav-links').classList.toggle('active');
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+      const dropbtn = document.querySelector('.dropbtn');
+      const dropdownContent = document.querySelector('.dropdown-content');
+
+      let isSubmenuOpen = false;
+
+      dropbtn.addEventListener('click', function (e) {
+        e.preventDefault();
+        isSubmenuOpen = !isSubmenuOpen;
+        dropdownContent.style.display = isSubmenuOpen ? 'flex' : 'none';
+      });
+
+      // Klik di luar dropdown: tutup jika terbuka
+      document.addEventListener('click', function (e) {
+        if (!dropbtn.contains(e.target) && !dropdownContent.contains(e.target)) {
+          dropdownContent.style.display = 'none';
+          isSubmenuOpen = false;
+        }
+      });
+    });
+  </script>
+</body>
+</html>

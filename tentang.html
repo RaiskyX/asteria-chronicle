@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" type="image/png" href="icon.png">
+  <title>Tentang - Asteria Chronicle</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <img src="logo-asteria.png" alt="Loading..." class="preloader-logo">
+  </div>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="navbar-container">
+      <div class="logo">
+        <a href="index.html">
+          <img src="logo-asteria.png" alt="Logo Asteria" />
+        </a>
+      </div>
+
+      <nav class="nav-links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="tentang.html">Tentang Medieval</a>
+        <a href="rules.html">Rules</a>
+        <div class="dropdown">
+          <a href="#" class="dropbtn">Registrasi</a>
+          <div class="dropdown-content">
+            <a href="partyquest.html" target="_blank">Party Quest</a>
+            <a href="volunteer.html" target="_blank">Volunteer</a>
+            <a href="talentperformer.html" target="_blank">Talent Performer</a>
+            <a href="boffer.html" target="_blank">Boffer Tournament</a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="logo-right">
+        <img src="logo-yuuhi.png" alt="Logo Yuuhi" />
+      </div>
+
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+    </div>
+  </header>
+
+  <!-- Section Tentang Medieval -->
+  <section class="rules-section">
+    <h2>Pengenalan Dunia Medieval oleh Lumi Media</h2>
+    <div class="medieval-images">
+      <img src="img/medieval/1.png" alt="Medieval 1" class="medieval-img">
+      <img src="img/medieval/2.png" alt="Medieval 2" class="medieval-img">
+      <img src="img/medieval/3.png" alt="Medieval 3" class="medieval-img">
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-asteria">
+    <div class="footer-container">
+      <div class="footer-left">
+        <img src="logo-asteria.png" alt="Logo Asteria" class="footer-logo">
+      </div>
+      <div class="footer-center">
+        <h4>Contact</h4>
+        <div class="footer-contact">
+          <img src="img/icon/wa.png" alt="WA Icon">
+          <span>0831 5372 0948</span>
+        </div>
+        <div class="footer-contact">
+          <img src="img/icon/email.png" alt="Email Icon">
+          <span>yhikari038@gmail.com</span>
+        </div>
+        <div class="footer-socials">
+          <a href="https://instagram.com/yuuhi.no.hikari" target="_blank">
+            <img src="img/icon/ig.png" alt="Instagram Logo" class="ig-logo">
+          </a>
+          <p class="ig-handle">@yuuhi.no.hikari</p>
+        </div>
+      </div>
+      <div class="footer-right">
+        <h4>Registrasi</h4>
+        <ul>
+          <li><a href="partyquest.html" target="_blank">Party Quest</a></li>
+          <li><a href="volunteer.html" target="_blank">Volunteer</a></li>
+          <li><a href="talentperformer.html" target="_blank">Talent Performer</a></li>
+          <li><a href="boffer.html" target="_blank">Boffer Tournament</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <p class="copyright">2025 © Yuuhi no Hikari. All Rights Reserved</p>
+  </footer>
+
+  <!-- Preloader -->
+  <script>
+    window.addEventListener("load", function () {
+      const preloader = document.getElementById("preloader");
+      preloader.style.opacity = "0";
+      preloader.style.transition = "opacity 0.5s ease";
+      setTimeout(() => {
+        preloader.style.display = "none";
+      }, 500);
+    });
+  </script>
+
+  <!-- Navbar Toggle & Dropdown Registrasi -->
+  <script>
+    function toggleMenu() {
+      document.querySelector('.nav-links').classList.toggle('active');
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+      const dropbtn = document.querySelector('.dropbtn');
+      const dropdownContent = document.querySelector('.dropdown-content');
+
+      let isSubmenuOpen = false;
+
+      dropbtn.addEventListener('click', function (e) {
+        e.preventDefault();
+        isSubmenuOpen = !isSubmenuOpen;
+        dropdownContent.style.display = isSubmenuOpen ? 'flex' : 'none';
+      });
+
+      document.addEventListener('click', function (e) {
+        if (!dropbtn.contains(e.target) && !dropdownContent.contains(e.target)) {
+          dropdownContent.style.display = 'none';
+          isSubmenuOpen = false;
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
